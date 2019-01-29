@@ -1,14 +1,14 @@
 'use strict';
-var React = require('react');
+var Nerv = require('nerv');
 
 var parseTag = require('./parse-tag');
 
 module.exports = h;
 
 function h(componentOrTag, properties, children) {
-  // if only one argument which is an array, wrap items with React.Fragment
+  // if only one argument which is an array, wrap items with Nerv.Fragment
   if (arguments.length === 1 && Array.isArray(componentOrTag)) {
-      return h(React.Fragment, null, componentOrTag);
+      return h(Nerv.Fragment, null, componentOrTag);
   } else if (!children && isChildren(properties)) {
     // If a child array or text node are passed as the second argument, shift them
     children = properties;
@@ -49,7 +49,7 @@ function h(componentOrTag, properties, children) {
 
   // Create the element
   var args = [componentOrTag, properties].concat(children);
-  return React.createElement.apply(React, args);
+  return Nerv.createElement.apply(Nerv, args);
 }
 
 function isChildren(x) {

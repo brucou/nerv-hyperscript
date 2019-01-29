@@ -1,8 +1,8 @@
 'use strict';
 var console = require('console');
-var ReactDOM = require('react-dom/server');
+var ReactDOM = require('nerv-server');
 var test = require('tape');
-var createReactClass = require('create-react-class');
+var createNervClass = require('create-nerv-class');
 
 var h = require('../');
 
@@ -116,7 +116,7 @@ test('Tags rendered with different arguments', function t(assert) {
 });
 
 function createComponent() {
-  return createReactClass({
+  return createNervClass({
     render: function render() {
       return (
         h('div', [

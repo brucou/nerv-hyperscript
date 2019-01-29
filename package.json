@@ -1,49 +1,46 @@
 {
-  "name": "react-hyperscript",
-  "description": "Hyperscript syntax for React.js markup",
+  "name": "nerv-hyperscript",
+  "description": "Hyperscript syntax for Nerv.js markup",
   "version": "3.2.0",
-  "homepage": "https://github.com/mlmorg/react-hyperscript",
+  "homepage": "https://github.com/brucou/nerv-hyperscript",
   "author": {
-    "name": "Matt Morgan",
-    "email": "matt@mlmorg.com",
-    "url": "http://mlmorg.com"
+    "name": "Brucou",
+    "email": "bcouriol@sparks.network",
+    "url": "https://brucou.github.io/"
   },
   "keywords": [
-    "react",
-    "react.js",
+    "nerv.js",
     "hyperscript",
     "markup",
     "dom"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mlmorg/react-hyperscript.git"
+    "url": "git://github.com/brucou/nerv-hyperscript.git"
   },
   "bugs": {
-    "url": "https://github.com/mlmorg/react-hyperscript/issues"
+    "url": "https://github.com/brucou/nerv-hyperscript/issues"
   },
   "license": "MIT",
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/mlmorg/react-hyperscript/blob/master/LICENSE"
+      "url": "https://github.com/brucou/nerv-hyperscript/blob/master/LICENSE"
     }
   ],
   "main": "index.js",
   "peerDependencies": {
-    "react": ">= 0.12.0 < 17.0.0"
+    "nerv": "^0.3.0"
   },
   "devDependencies": {
     "create-react-class": "^15.6.2",
-    "eslint": "^2.0.0",
-    "eslint-config-mlmorg": "^2.0.0",
-    "react": ">= 0.12.0 < 17.0.0",
-    "react-dom": "^16.0.0",
+    "grunt": "^0.4.5",
+    "nerv": "^0.3.0",
+    "nerv-server": "^1.3.11",
     "tap-spec": "^4.1.1",
     "tape": "^4.5.1"
   },
   "scripts": {
-    "lint": "eslint .",
-    "test": "npm run lint && node test/index.js | tap-spec"
+    "test": "node test/index.js | tap-spec"
   }
 }
