@@ -1,5 +1,5 @@
 'use strict';
-var Nerv = require('nerv');
+var Nerv = require('nervjs');
 
 var parseTag = require('./parse-tag');
 
